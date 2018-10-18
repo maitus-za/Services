@@ -44,6 +44,7 @@ public class UserController {
         return userRepository.findById(id);
     }
 
+    // Updating a user ***
     @RequestMapping(path = "updateUser/{id}", method = RequestMethod.PUT)
     @ApiOperation("Updating user details.")
     public User updateUser(@RequestBody User userToUpdate) {
