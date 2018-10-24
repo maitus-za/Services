@@ -11,10 +11,20 @@ public class UserInfo {
 
     private String name;
 
+    private String cell;
+
+    private String email;
+
+    private String department;
+
     public UserInfo(User user){
 
         this.id = user.getId();
         this.name = user.getFirstName() + " " + user.getLastName();
+        this.cell = user.getCellNumber();
+        this.email = user.getEmailAddress();
+        this.department = user.getDepartment();
+
     }
 
 }
